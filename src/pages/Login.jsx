@@ -22,7 +22,7 @@ const Login = () => {
     onSubmit: async values => {
       // alert(JSON.stringify(values, null, 2));
       console.log(values)
-      let res = await axios.post('https://foodb-4.onrender.com//user/login',values);
+      let res = await axios.post('http://localhost:9988/user/login',values);
     let data = res.data;
     console.log(res)
     console.log(data)

@@ -66,7 +66,7 @@ const Form = () => {
 
     try {
       setLoading(true);
-      const response = await fetch('https://foodb-4.onrender.com//enquiry/register', {
+      const response = await fetch('http://localhost:9988/enquiry/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

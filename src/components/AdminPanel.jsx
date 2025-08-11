@@ -6,7 +6,7 @@ const AdminPanel = () => {
 
   const fetchEnquiries = async () => {
     try {
-      const res = await fetch('https://foodb-4.onrender.com//enquiry/all');
+      const res = await fetch('http://localhost:9988/enquiry/all');
       const data = await res.json();
       setEnquiries(data);
     } catch (err) {
@@ -27,7 +27,7 @@ const AdminPanel = () => {
       <div className='flex items-center w-[90vw] justify-between p-5'><h2 className="text-2xl font-bold mb-4">All Enquiries</h2>
       <button 
   onClick={async () => {
-    const res = await fetch('https://foodb-4.onrender.com//enquiry/send-email', {
+    const res = await fetch('http://localhost:9988/enquiry/send-email', {
       method: 'POST',
     });
     const data = await res.json();

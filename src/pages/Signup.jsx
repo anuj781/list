@@ -51,7 +51,7 @@ const Signup = () => {
 
     console.log(details)
 
-    let res = await axios.post('https://foodb-4.onrender.com//user/register',details);
+    let res = await axios.post('http://localhost:9988/user/register',details);
     let data = res.data;
     console.log(res)
     console.log(data)
